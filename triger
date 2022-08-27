@@ -1,1 +1,10 @@
 
+create database ineuron
+use ineuron
+
+create table course(
+course_id int , 
+course_desc varchar(50),
+course_mentor varchar(60),
+course_price int ,
+course_discount int )
