@@ -2,14 +2,13 @@
 create database ineuron
 use ineuron
 
-create table course(
+create table course1(
 course_id int , 
 course_desc varchar(50),
 course_mentor varchar(60),
 course_price int ,
-course_discount int )
-
-
+course_discount int,
+create_date date  )
 
 
 create table course_update(
