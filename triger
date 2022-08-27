@@ -193,6 +193,28 @@ select * from test11;
 
 insert into test11 values("sudh",sysdate(),234354)
 
+update test11 set c1 = "after update" where c1 = "after delete"
+
+
+select * from  test12;
+
+delimiter //
+create trigger to_upate_others_before
+before update on test11 for each row 
+begin
+	insert into test12(c1,c2,c3) values(new.c1, new.c2,new.c3);
+end; //
+
+update test11 set c1 = "insert new" where c1 = "sudh"
+
+1.create a table col = name , mail_id,phone_number , address , users_sys, time_sys,salary,incentive,final_salary
+2.try to time all the time that uses name should start with s for each and every insert op
+
+
+
+
+
+
 
 
 
