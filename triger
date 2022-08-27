@@ -8,3 +8,11 @@ course_desc varchar(50),
 course_mentor varchar(60),
 course_price int ,
 course_discount int )
+
+
+
+
+create table course_update(
+course_metor_update varchar(50),
+course_price_update int ,
+course_discount_update int )
